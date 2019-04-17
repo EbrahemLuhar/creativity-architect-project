@@ -1,0 +1,258 @@
+#top-section {
+    color: #433A3F;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 1;
+    width: 70%;
+    text-align: center;
+}
+
+#top-section .top-container .top-content {
+    animation: animation-top-section 1s;
+    -webkit-animation: animation-top-section 1s;
+    -moz-animation: animation-top-section 1s;
+    -o-animation: animation-top-section 1s;
+}
+
+#top-section .top-container .top-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-bottom: 10px; 
+    text-shadow: 1px 1px 1px rgb(153, 151, 151);
+}
+
+#top-section .top-container .top-content .shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#top-section .top-container .top-content .shapes .line {
+    height: 2px;
+    width: 20%;
+    background: #433A3F;
+}
+
+#top-section .top-container .top-content .shapes .fa-certificate {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#top-section .top-container .top-content h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-bottom: 60px;
+    color: #433A3F;
+}
+
+#top-section .top-container .top-content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    background-color: red; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid red;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+    transition: all 300ms ease-in-out;
+}
+
+#top-section .top-container .top-content a:hover {
+    background: white;
+    color: red;
+}
+
+#top-section .top-container .top-content .fa-long-arrow-down {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 11px;
+    color: red;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #top-section .top-container .top-content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+
+/* Small mobile phones */
+@media only screen and (max-width: 480px) {
+    #top-section {
+        width: 95%;
+    }
+
+    #top-section .top-container .top-content h1 {
+        font-size: 2.8rem;
+    }
+
+    #top-section .top-container .top-content a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #top-section .top-container .top-content .fa-long-arrow-down {
+        display: block;
+        font-size: 1rem;
+        padding-top: 5px;
+        color: red;
+    }
+}
+
+/* Small mobile phones */
+@media only screen and (max-width: 320px) {
+
+    #top-section {
+        width: 100%;
+    }
+
+    #top-section .top-container .top-content h1 {
+        font-size: 2.2rem;
+    }
+
+    #top-section .top-container .top-content .shapes {
+        padding-bottom: 10px;
+    }
+
+    #top-section .top-container .top-content .shapes .line {
+        height: 1px;
+    }
+
+    #top-section .top-container .top-content .shapes .fa-certificate {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    #top-section .top-container .top-content h4 {
+        font-size: 1.1rem;
+        padding-bottom: 40px;
+    }
+
+    #top-section .top-container .top-content a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    #top-section .top-container .top-content .fa-long-arrow-down {
+        display: block;
+        font-size: 1rem;
+        padding-top: 5px;
+        color: red;
+    }
+}
+
+
+/* Mobile landscape */
+@media only screen and (max-height: 530px) {
+    #top-section {
+        width: 80%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+    }
+
+    #top-section .top-container .top-content h1 {
+        font-size: 2.5rem;
+    }
+
+    #top-section .top-container .top-content .shapes {
+        padding-bottom: 10px;
+    }
+
+    #top-section .top-container .top-content .shapes .line {
+        height: 1px;
+        width: 10%;
+    }
+
+    #top-section .top-container .top-content .shapes .fa-certificate {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    #top-section .top-container .top-content h4 {
+        font-size: 1.1rem;
+        padding-bottom: 40px;
+    }
+
+    #top-section .top-container .top-content a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    #top-section .top-container .top-content .fa-long-arrow-down {
+        display: block;
+        font-size: 1rem;
+        padding-top: 5px;
+        color: red;
+    }
+}
+
+/* Mobile small landscape */
+@media only screen and (max-height: 430px) {
+    #top-section {
+        width: 80%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+
+    #top-section .top-container .top-content h1 {
+        font-size: 2.2rem;
+    }
+
+    #top-section .top-container .top-content .shapes {
+        padding-bottom: 10px;
+    }
+
+    #top-section .top-container .top-content .shapes .line {
+        height: 1px;
+        width: 10%;
+    }
+
+    #top-section .top-container .top-content .shapes .fa-certificate {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    #top-section .top-container .top-content h4 {
+        font-size: 1.1rem;
+        padding-bottom: 30px;
+    }
+
+    #top-section .top-container .top-content a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    #top-section .top-container .fa-long-arrow-down {
+        display: none;
+    }
+}
+
+/* Animations  */
+@-webkit-keyframes animation-top-section {
+  0%   { opacity: 0; transform: translate3d(0,60px,0) }
+  100% { opacity: 1; transform: translate3d(0,0,0) }
+}
+@-moz-keyframes animation-top-section {
+  0%   { opacity: 0; transform: translate3d(0,60px,0) }
+  100% { opacity: 1; transform: translate3d(0,0,0) }
+}
+@-o-keyframes animation-top-section {
+  0%   { opacity: 0; transform: translate3d(0,60px,0) }
+  100% { opacity: 1; transform: translate3d(0,0,0) }
+}
+@keyframes animation-top-section {
+  0%   { opacity: 0; transform: translate3d(0,60px,0) }
+  100% { opacity: 1; transform: translate3d(0,0,0) }
+}

@@ -1,0 +1,132 @@
+#contact-section {
+    background: #EEEEEE;
+    color: #433A3F;
+}
+
+#contact-section .container {
+    padding: 0 0 60px 0;
+}
+
+#contact-section .container h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 20px 0 80px 0;
+}
+
+#contact-section .container .contact-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#contact-section .container .contact-wrapper .contact-left .address {
+    padding-bottom: 20px;
+}
+#contact-section .container .contact-wrapper .contact-left .address h4 {
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+#contact-section .container .contact-wrapper .contact-left .address 
+.dash {
+    height: 3px;
+    width: 42px;
+    background: red;
+    margin-bottom: 20px;
+}
+
+#contact-section .container .contact-wrapper .contact-left .address 
+p {
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+#contact-section .container .contact-wrapper .contact-left 
+.contact-info p {
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+#contact-section .container .contact-wrapper .contact-left 
+.contact-info p span {
+    font-weight: 600;
+}
+
+#contact-section .container .contact-wrapper .contact-right
+form label input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 18px;
+  border: 1px solid #433A3F;
+  font-size: 0.9rem;
+  color: #433A3F;
+}
+
+#contact-section .container .contact-wrapper .contact-right
+form label textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 18px;
+  resize: none;
+  border: 1px solid #433A3F;
+  font-size: 0.9rem;
+  text-align: left;
+  color: #433A3F;
+}
+
+#contact-section .container .contact-wrapper .contact-right
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 2px solid red;
+    font-size: 1.3rem;
+    background-color: red;
+    color: white;  
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#contact-section .container .contact-wrapper .contact-right
+form input[type="submit"]:hover {
+    background-color: white;
+    color: red;  
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact-section .container .contact-wrapper {
+        grid-template-columns: 40% 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #contact-section .container .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 1fr;
+        grid-gap: 20px;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #contact-section .container h2 {
+        font-size: 2.6rem;
+        margin-bottom: -30px;
+    }
+}

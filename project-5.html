@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" 
+    integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Creativity Architect</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/logo-ca.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">HOME</a>
+                <a href="index.html#projects">PROJECTS</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#recent">RECENT</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- navbar colour change when scrolling -->
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 0) {
+                $('header').css('background','#ECECEC');
+            } else {
+                $('header').css('background','transparent');
+            }
+        });
+    </script>
+
+    <!-- mobile menu start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" onclick="closeNav()">HOME</a>
+        <a href="index.html#projects" onclick="closeNav()">PROJECTS</a>
+        <a href="index.html#about" onclick="closeNav()">ABOUT</a>
+        <a href="index.html#recent" onclick="closeNav()">RECENT</a>
+        <a href="index.html#contact" onclick="closeNav()">CONTACT</a>
+    </div>
+    <div class="container">
+        <div class="menu-logo">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/logo-ca.png" alt="logo">
+            </a>
+        </div>
+        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-- mobile menu end -->
+
+    <div id="project-page">
+        <div class="container">
+            <h1>Pemberton Hospital Ward</h1>
+            <div class="img-wrap">
+                <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/recent1.jpg" alt="Pemberton Hospital Ward">
+            </div>
+            <div class="text-wrap">
+                <h2>A design for a five storey extension to the existing ward.</h2>
+                <div class="dash"></div>
+                <p class="text">The facility would potentially include research laboratories, 
+                    café, seating area and consulting rooms, WC facilities and project hall 
+                    changing facilities. The design incorporated a five storey multi-functional 
+                    public atrium space as an enterence with integrated meeting facilities and catering.</p>
+                <div class="quote-center">  
+                    <div class="quote-container">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <div class="customer-quote">
+                            <p>With an infux of patients we need to expand
+                                and look forward to working with Creativity Architect.</p>
+                        </div>
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p class="quote-author"><span>L. Palmina</span> - Ward Overseer</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="divider-line"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="mobile-logo"></div>
+                <div class="social-icons">
+                    <a href="https://twitter.com/EbrahemLuhar" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://en-gb.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://uk.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.pinterest.co.uk/" target="_blank">
+                        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="logo"></div>
+                <span>© Creativity Architect 2019</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

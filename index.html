@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" 
+    integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>Creativity Architect</title>
+</head>
+<body>
+    <div class="top-bg-img"></div>
+    <header>
+        <nav class="animated-nav">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/logo-ca.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="#top">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#recent">RECENT</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- navbar colour change when scrolling -->
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('header').css('background','#ECECEC');
+            } else {
+                $('header').css('background','transparent');
+            }
+        });
+    </script>
+
+    <!-- mobile menu start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#top" onclick="closeNav()">HOME</a>
+        <a href="#projects" onclick="closeNav()">PROJECTS</a>
+        <a href="#about" onclick="closeNav()">ABOUT</a>
+        <a href="#recent" onclick="closeNav()">RECENT</a>
+        <a href="#contact" onclick="closeNav()">CONTACT</a>
+    </div>
+    <div class="container">
+        <div class="menu-logo">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/logo-ca.png" alt="logo">
+            </a>
+        </div>
+        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-- mobile menu end -->
+
+    
+    <section id="top-section">
+        <a class="anchor-top" id="top"></a>
+        <div class="top-container">
+            <div class="top-content">
+                <h1>Creativity Architect</h1>
+                <div class="shapes">
+                    <div class="line"></div>
+                    <i class="fa fa-certificate" aria-hidden="true"></i>
+                    <div class="line"></div>
+                </div>
+                <h4>Inspiring Better Living</h4>
+                <a href="#projects">Our Work</a>
+                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <a class="anchor-projects" id="projects"></a>
+        <div class="container">
+            <h2>PROJECTS</h2>    
+            <div class="grid-wrap">
+                <div class="dtl25">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/project1.jpg" alt="Greenside Eco Building">
+                    <div class="dtl">
+                        <h3>Greenside Eco Building</h3>
+                        <a href="project-1.html" class="text-title">
+                            <span>VIEW PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dtl25">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/project2.jpg" alt="Quin Museum Extension">
+                    <div class="dtl">
+                        <h3>Quin Museum Extension</h3>
+                        <a href="project-2.html" class="text-title">
+                            <span>VIEW PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dtl25">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/project3.jpg" alt="Protareon Offices">
+                    <div class="dtl">
+                        <h3>Protareon Offices</h3>
+                        <a href="project-3.html" class="text-title">
+                            <span>VIEW PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dtl25">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/project4.jpg" alt="Dalmin Building">
+                    <div class="dtl">
+                        <h3>Dalmin Building</h3>
+                        <a href="project-4.html" class="text-title">
+                            <span>VIEW PROJECT</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <a class="anchor-about" id="about"></a>
+        <div class="container">
+            <h2>ABOUT</h2>
+            <div class="about-wrapper-top">
+                <div class="about-img-wrap">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/about1.jpg" alt="About image">
+                </div>
+                <div class="about-text">
+                    <h4>Our focus on providing design services to private and public sector clients</h4>
+                    <p>We work on projects ranging in value from £50,000 to £250m. 
+                        At our practice, we are committed to developing productive long-term 
+                        client partnerships.
+                    </p>
+                    <p>Our reputation for the high quality, award-winning architectural designs stems 
+                        from our outstanding specialist teams of experts who are experienced across
+                        a range of sectors, including residential, healthcare, and commercial development
+                    </p>
+                </div>
+            </div>
+            <div class="about-wrapper-bottom">
+                <div class="about-text">
+                    <h4>Getting the best out of a space, aesthetically and functionally is our priority</h4>
+                    <p>We have a commitment to using innovative techniques to minimise our impact on the 
+                        natural environment, and to maximise our positive impact on the built environment.
+                    </p>
+                    <p>With our customer focused approach Our clients benefit from having one consistent 
+                        point of contact and this approach allows our team to take ownership of a project 
+                        from its inception through to completion.
+                    </p>
+                </div>
+                <div class="about-img-wrap">
+                    <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/about2.jpg" alt="About image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent-section">
+        <a class="anchor-recent" id="recent"></a>
+        <div class="container">
+            <h2>RECENT</h2>
+            <div class="blog-wrap">
+                <div class="left">
+                    <div class="blog-post">
+                        <div class="img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/recent1.jpg" 
+                            alt="blog post">
+                        </div>
+                        <div class="dash"></div>
+                        <h4>Pemberton Hospital Ward</h4>
+                        <div class="link">
+                            <a href="project-5.html">READ MORE</a>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="blog-post">
+                        <div class="img-wrap">
+                            <img src="https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/recent2.jpg" 
+                            alt="blog post">
+                        </div>
+                        <div class="dash"></div>
+                        <h4>School Library</h4>
+                        <div class="link">
+                            <a href="project-6.html">READ MORE</a>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="blog.html" class="blog-btn">See the blog</a>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <a class="anchor-contact" id="contact"></a>
+        <div class="container">
+            <h2>CONTACT</h2>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <div class="address">
+                        <h4>Liverpool Office</h4>
+                        <div class="dash"></div>
+                        <p>Creativity Architect</p>
+                        <p>332 Clinton Road</p>
+                        <p>Parksway</p>
+                        <p>Liverpool L2 4BU</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><span>Phone:</span> +44 (0)151 887 2129</p>
+                        <p><span>Email:</span> ca.architect@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="user-form" action="#" method="#">
+                        <label for="input-name">
+                            <input type="text" id="input-name" placeholder="Full Name">
+                        </label>
+                        <label for="input-email">
+                            <input type="email" id="input-email" placeholder="Email Address">
+                        </label>
+                        <label for="input-phone">
+                            <input type="number" id="input-phone" placeholder="Phone Number">
+                        </label>
+                        <label for="user-text">
+                            <textarea id="user-text" name="user-text" rows="5"
+                            placeholder="Describe yourself here..."></textarea>
+                        </label>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-line"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="mobile-logo"></div>
+                <div class="social-icons">
+                    <a href="https://twitter.com/EbrahemLuhar" target="_blank">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://en-gb.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://uk.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.pinterest.co.uk/" target="_blank">
+                        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="logo"></div>
+                <span>© Creativity Architect 2019</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

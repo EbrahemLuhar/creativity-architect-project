@@ -1,0 +1,129 @@
+@import 'reset.css';
+@import 'navbar-section.css';
+@import 'top-section.css';
+@import 'projects-section.css';
+@import 'about-section.css';
+@import 'recent-section.css';
+@import 'contact-section.css';
+@import 'footer.css';
+
+@import 'project-pages.css';
+@import 'blog-page.css';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    background: #ECECEC;
+}
+
+.top-bg-img {
+    height: 100vh; 
+    background-image: url('https://raw.githubusercontent.com/EbrahemLuhar/architecture-images/master/top-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(200%);
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+a.anchor-top {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
+a.anchor-projects {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
+a.anchor-about {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+
+a.anchor-recent {
+    display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;
+}
+
+a.anchor-contact {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    a.anchor-recent {
+        top: -120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    a.anchor-projects {
+        top: 0;
+    }
+
+    a.anchor-about {
+        top: -35px;
+    }
+
+    a.anchor-recent {
+        top: -25px;
+    }
+
+    a.anchor-contact {
+        top: -25px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    a.anchor-recent {
+        top: 5px;
+    }
+}
+
+@media only screen and (max-height: 415px) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    a.anchor-projects {
+        top: 0;
+    }
+
+    a.anchor-about {
+        top: -25px;
+    }
+
+    a.anchor-recent {
+        top: -25px;
+    }
+}

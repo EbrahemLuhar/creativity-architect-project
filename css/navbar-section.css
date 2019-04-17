@@ -1,0 +1,252 @@
+header {
+    position: fixed;
+    top: 0;
+    background: transparent;
+    height: 80px;
+    margin: 0 auto;
+    width: 100vw;
+    z-index: 5;
+    background: #ECECEC;
+}
+
+header nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+header nav.animated-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    max-width: 1350px;
+    animation: animation-navbar 1.2s;
+    -webkit-animation: animation-navbar 1.2s;
+    -moz-animation: animation-navbar 1.2s;
+    -o-animation: animation-navbar 1.2s;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #433A3F; 
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease-in-out;
+    padding: 29px 10px 28px;
+}
+
+header nav .logo {
+    padding: 0 10px;
+}
+
+header nav .logo img {
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    margin-right: 9px;
+}
+
+header nav a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #0b0b80;
+    color: #0b0b80;
+}
+
+header nav .logo:hover {
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    color: transparent;
+}
+
+.sidenav, .mobile-menu, .menu-logo {
+    display: none;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background: #433A3F;
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .sidenav a {
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-family: 'Cinzel', serif;
+        letter-spacing: 2px;
+        color: #ECECEC;
+        display: block;
+        transition: 0.3s;
+        padding: 1.5rem 0;
+    }
+      
+    .sidenav a:hover {
+        color: rgb(253, 112, 112);
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 76px !important;
+        padding: 10px;
+        margin: 0 15px 0 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 36px !important;
+        padding: 10px;
+        margin: 20px;
+        color: #433A3F;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        margin: 5px 10px;
+        color: #433A3F;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu-logo a {
+        text-decoration: none;
+    }
+
+    .menu-logo a img {
+        width: 75px;
+        height: auto;
+        margin-top:6px;
+    }
+}
+
+/* tablet and smaller height */
+@media only screen and (max-height: 600px) {
+    header {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background: #433A3F;
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .sidenav a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-family: 'Cinzel', serif;
+        letter-spacing: 2px;
+        color: #ECECEC;
+        display: block;
+        transition: 0.3s;
+        padding: 0.8rem 0;
+    }
+      
+    .sidenav a:hover {
+        color: rgb(253, 112, 112);
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 60px !important;
+        padding: 10px;
+        margin: 2px 15px 0 0;
+        cursor: pointer;
+    }
+
+    .menu-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        margin: 5px 10px;
+        color: #433A3F;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu-logo img {
+        width: 60px;
+        height: auto;
+        margin-top: 7px;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px !important;
+        padding: 10px;
+        margin: 15px;
+        color: #433A3F;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+@-webkit-keyframes animation-navbar {
+    0%   { opacity: 0; }
+    50%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes animation-navbar {
+    0%   { opacity: 0; }
+    50%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes animation-navbar {
+    0%   { opacity: 0; }
+    50%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes animation-navbar {
+    0%   { opacity: 0; }
+    50%   { opacity: 0; }
+    100% { opacity: 1; }
+  }

@@ -1,0 +1,199 @@
+#project-page {
+    margin-top: 80px;
+    background-color:whitesmoke; 
+    padding: 2rem 0;
+}
+
+#project-page .container {
+    width: 85%;
+    background-color:whitesmoke; 
+    max-width: 1224px;
+}
+
+#project-page .container h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px rgb(153, 151, 151);
+    text-align: center;
+    color: white;
+    background-color: #433A3F;
+    max-width: 1224px;
+}
+
+#project-page .container .img-wrap {
+    max-width: 1224px;
+}
+
+#project-page .container .img-wrap img {
+    max-width: 100%;
+}
+
+#project-page .container .text-wrap h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 2rem 0 1rem;
+    color: #433A3F;
+    line-height: 1.5;
+}
+
+#project-page .container .text-wrap .dash {
+    height: 3px;
+    width: 42px;
+    background: red;
+    margin-bottom: 1rem;
+}
+
+#project-page .container .text-wrap p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 1rem;
+    color: #433A3F;
+    line-height: 1.5;
+}
+
+#project-page .container .text-wrap .quote-center {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 0 1rem;
+}
+
+#project-page .container .text-wrap .quote-center .quote-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-page .container .text-wrap .quote-center .quote-container
+.fa-quote-left {
+    font-size: 8rem;
+    text-align: center;
+    color: rgb(219, 220, 255);
+}
+
+#project-page .container .text-wrap .quote-center .quote-container
+.fa-quote-right {
+    font-size: 8rem;
+    text-align: center;
+    color: rgb(219, 220, 255);
+}
+
+#project-page .container .text-wrap .quote-center .quote-container
+.customer-quote p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 6px solid rgb(155, 159, 255);
+    color: #433A3F;
+}
+
+#project-page .container .text-wrap .quote-author {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: #433A3F;
+    line-height: 1;
+}
+
+#project-page .container .text-wrap .quote-author
+span {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+    #project-page .container h1 {
+        font-size: 2.2rem;
+    }
+
+    #project-page .container .text-wrap h2 {
+        font-size: 1.3rem;
+    }
+
+    #project-page .container .text-wrap p {
+        font-size: 1rem;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .fa-quote-left {
+        font-size: 4rem;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .fa-quote-right {
+        font-size: 4rem;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .customer-quote p {
+        font-size: 1.2rem;
+    }
+
+    #project-page .container .text-wrap .quote-author {
+        font-size: 0.9rem;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #project-page .container {
+        width: 95%;
+    }
+
+    #project-page .container h1 {
+        font-size: 1.8rem;
+    }
+
+    #project-page .container .text-wrap h2 {
+        font-size: 1.1rem;
+    }
+
+    #project-page .container .text-wrap p {
+        font-size: 0.9rem;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 1fr 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .fa-quote-left {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .fa-quote-right {
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    #project-page .container .text-wrap .quote-center .quote-container
+    .customer-quote p {
+        font-size: 1.1rem;
+    }
+
+    #project-page .container .text-wrap .quote-author {
+        font-size: 0.8rem;
+        padding-top: 0rem;
+    }
+}
