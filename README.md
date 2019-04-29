@@ -2,8 +2,7 @@
 
 ## About the project
 
-The Creativity Architect website was made to display the work the company has done and provides a blog of recent work
-done. The logo was also custom made and the colour scheme of the website was made to complement the logo.
+The Creativity Architect website was made to display the work the company has done and provides a blog of recent projects. The logo was also custom made and the colour scheme of the website was made to complement the logo.
 
 The project was built using HTML CSS and Javascript. It is fully responsive and includes my first attempt at making
 a mobile navigation menu.
