@@ -1,4 +1,4 @@
-# creativity architect project
+# Creativity Architect Project
 
 ## About the project
 
